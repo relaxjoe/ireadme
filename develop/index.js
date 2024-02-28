@@ -1,5 +1,9 @@
 // Include packages needed for this application
-
+const inquirer = require('inquirer');
+// Include packages needed for this application
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateReadmeContent = require('./utils/generateMarkdown.js');
 
 // Array of questions for user input
 const questions = [
@@ -50,6 +54,7 @@ const questions = [
       message: 'Enter your email address:',
     },
   ];
+  
   
 
 // Function to write README file
